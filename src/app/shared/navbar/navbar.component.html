@@ -1,0 +1,72 @@
+<nav class="navbar navbar-expand-lg fixed-top navbar-transparent" color-on-scroll="500">
+	<div class="container">
+		<div class="navbar-translate">
+			<button class="navbar-toggler navbar-burger" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" (click)="sidebarToggle()">
+				<span class="navbar-toggler-bar"></span>
+				<span class="navbar-toggler-bar"></span>
+				<span class="navbar-toggler-bar"></span>
+			</button>
+			<a class="navbar-brand" href="Home">Halls Of Oblivion</a>
+		</div>
+		<div class="navbar-collapse" id="navbarToggler">
+			<ul class="navbar-nav ml-auto">
+			
+
+
+				<li class="nav-item">
+					<a class="nav-link" href="javascript:scroll(news)">News</a>
+				</li>
+				
+				<li class="nav-item">
+					<a class="nav-link" href="#Live">Live</a>
+				</li>
+				
+				<li class="nav-item ">
+					<div ngbDropdown class="d-inline-block dropdown">
+						<a class="nav-link" id="dropdownBasic1" ngbDropdownToggle>Band</a>
+						<div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="dropdown-primary">
+							<a class="dropdown-item">Sebastian</a>
+							<a class="dropdown-item">Marcel</a>
+							<a class="dropdown-item">Markus K</a>
+							<a class="dropdown-item">Markus W</a>
+						</div>
+					</div>
+				</li>
+
+				<li class="nav-item ">
+					<div ngbDropdown class="d-inline-block dropdown">
+						<a class="nav-link" id="dropdownBasic1" ngbDropdownToggle>Media</a>
+						<div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="dropdown-primary">
+							<a class="dropdown-item">Videos</a>
+							<a class="dropdown-item">Pictures</a>
+							<a class="dropdown-item">Songs</a>
+						</div>
+					</div>
+				</li>
+				
+				<li class="nav-item">
+						<a class="nav-link" href="ScrollReveal().reveal('.Merch')">Merch</a>
+					</li>
+				
+				<!--
+				<li class="nav-item" *ngIf="!isDocumentation()">
+					<a href="http://pk2-angular.creative-tim.com/documentation/tutorial" class="nav-link" target="_blank"><i class="nc-icon nc-book-bookmark"></i> Documentation</a>
+				</li>
+				-->
+
+				<li class="nav-item">
+					<a class="nav-link" rel="tooltip" title="Follow us on Instagram" data-placement="bottom" href="https://instagram.com/hallsofoblivion" target="_blank">
+						<i class="fa fa-instagram"></i>
+						<p class="d-lg-none">Instagram</p>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" rel="tooltip" title="Like us on Facebook" data-placement="bottom" href="https://www.facebook.com/hallsofoblivion" target="_blank">
+						<i class="fa fa-facebook-square"></i>
+						<p class="d-lg-none">Facebook</p>
+					</a>
+				</li>
+            </ul>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,73 @@
+.band {
+	background: url('assets/img/band.jpg');
+	margin-bottom: 0px;
+	border-radius: 0px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position-x: center;
+	background-position-y: -250px;
+	height: 30rem;
+	border-top: 2px solid grey;
+	border-bottom: 2px solid grey;
+}
+
+.image_container {
+    position: relative;
+    display: inline-block;
+	vertical-align: top;
+	border-top: 2px solid grey;
+	border-bottom: 2px solid grey;
+	margin: 0px !important;
+}
+
+
+
+
+.text-center p.description {
+	text-align: center !important;
+}
+
+@import "../../assets/sass/paper-kit/variables";
+
+.headline{
+	font-family: 'Times New Roman', Times, serif !important;
+	text-transform: uppercase !important;
+	text-align: center;
+	margin-top: 1em;
+	margin-bottom: 0.3em;
+	overflow: hidden;
+	clear: both;
+	margin: 0.67em 0;
+	color: $white-color;
+}
+
+.headline::before, .headline::after {
+	content: "";
+	border: 0; 
+	height: 1px; 
+    background-repeat: repeat-x;
+    border-top: 0px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+	clear: both;
+    overflow: visible;
+	margin: 2.4em 0;
+	margin-bottom: 5px !important;
+}
+
+.headline::before {
+	background-image: linear-gradient(to right, $dark-color, $dark-color, $dark-color, $white-color);
+	margin: 0 0.66667em 0 -100%;
+}
+
+.headline::after {
+	background-image: linear-gradient(to right, $white-color, $dark-color, $dark-color, $dark-color);
+	margin: 0 -100% 0 0.66667em;
+}
+
+img {
+	width: 100%;
+	max-width: 100%;
+	border: 0;
+}
