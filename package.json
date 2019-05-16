@@ -32,6 +32,7 @@
     "jw-bootstrap-switch-ng2": "2.0.1",
     "ng-lazyload-image": "^5.1.2",
     "ng2-nouislider": "1.7.12",
+    "ngx-facebook": "^2.4.0",
     "ngx-scrollreveal": "^3.0.0",
     "nouislider": "9.2.0",
     "popper.js": "1.14.4",

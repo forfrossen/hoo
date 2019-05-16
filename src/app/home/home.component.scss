@@ -1,5 +1,5 @@
 .page-header {
-	background: url('assets/img/coverart.png');
+	background: url('/assets/img/coverart.png');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position-x: center;
@@ -8,7 +8,7 @@
 
 ::ng-deep .section-dark { 
 	padding: 8rem 0rem !important;
-	background-image: url('assets/img/zwartevilt.png');
+	background-image: url('/assets/img/zwartevilt.png');
 	background-size: auto;
     background-position: 50% 50%;
     background-repeat: repeat;

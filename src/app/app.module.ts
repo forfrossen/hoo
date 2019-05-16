@@ -13,6 +13,7 @@ import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
 
+import { FacebookModule, FBPostComponent } from 'ngx-facebook';
 
 import { HomeModule } from './home/home.module';
 
@@ -21,16 +22,17 @@ import { HomeModule } from './home/home.module';
     AppComponent,
     LandingComponent,
     NavbarComponent,
-    FooterComponent,
+    FooterComponent,    
   ],
   imports: [
-	BrowserModule,
+    BrowserModule,
     NgbModule.forRoot(),
     FormsModule,
     RouterModule,
     AppRoutingModule,
-	HomeModule,
-	NgsRevealModule,
+    HomeModule,
+    FacebookModule.forRoot(),
+    NgsRevealModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
