@@ -10,7 +10,7 @@ import { LiveComponent } from './live/live.component';
 const routes: Routes =[
     { path: 'home',             component: HomeComponent 		},
     { path: 'landing',          component: LandingComponent 	},
-    { path: '', redirectTo: 'home', pathMatch: 'full' 			}
+    { path: '', redirectTo: 'forbidden', pathMatch: 'full' 			}
 ];
 
 @NgModule({
