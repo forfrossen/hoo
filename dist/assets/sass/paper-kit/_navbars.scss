@@ -10,7 +10,7 @@
 .navbar{
     border: $none;
     font-size: $font-size-base;
-    transition: all 0.4s;
+    transition: all 1.4s;
     -webkit-transition: all 0.4s;
     padding: 0;
     background: $black-bg;
@@ -117,7 +117,10 @@
        @include center-item();
     }
     &.navbar-transparent{
-        padding-top: 25px;
+        padding-top: 0px;
+        position: fixed;
+        bottom: 0px;
+        align-content: flex-end;
     }
     .logo-container{
         margin-top: 5px;
