@@ -41,12 +41,18 @@ export class AppComponent implements OnInit {
 		} );
 		this.renderer.listenGlobal( 'window', 'scroll', ( event ) => {
 			const number = window.scrollY;
-			if ( number > 150 || window.pageYOffset > 150 ) {
+			const navBreakPoint = 200;
+
+			if ( number > navBreakPoint || window.pageYOffset > navBreakPoint ) {
 				// add logic
 				navbar.classList.remove( 'navbar-transparent' );
+				navbar.classList.remove( 'fixed-bottom' );
+				navbar.classList.add( 'fixed-top' );
 			} else {
 				// remove logic
 				navbar.classList.add( 'navbar-transparent' );
+				navbar.classList.remove( 'fixed-top' );
+				navbar.classList.add( 'fixed-bottom' );
 			}
 		} );
 		var ua = window.navigator.userAgent;

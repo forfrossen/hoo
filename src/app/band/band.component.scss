@@ -1,5 +1,5 @@
 .band {
-	background: url('assets/img/band.jpg');
+	background: url('/assets/img/band.jpg');
 	margin-bottom: 0px;
 	border-radius: 0px;
 	background-size: cover;
@@ -70,4 +70,8 @@ img {
 	width: 100%;
 	max-width: 100%;
 	border: 0;
+}
+
+.section-dark { 
+	padding: 2.5rem 0rem !important;
 }

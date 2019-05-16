@@ -1,7 +1,24 @@
 .page-header {
-	background: url('assets/img/coverart.png');
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position-x: center;
-	background-position-y: 0px;
+	background				: url('/assets/img/coverart.png');
+	background-size			: cover;
+	background-repeat		: no-repeat;
+	background-position-x	: center;
+	background-position-y	: 0px;
+}
+/*
+::ng-deep .section-dark { 
+	padding: 8rem 0rem !important;
+	background-image: url('/assets/img/zwartevilt.png');
+	background-size: auto;
+    background-position: 50% 50%;
+    background-repeat: repeat;
+    bottom: auto;
+}
+*/
+::ng-deep .wrapper {
+	background-image: url('/assets/img/zwartevilt.png');
+	background-size: auto;
+    background-position: 50% 50%;
+    background-repeat: repeat;
+    bottom: auto;
 }
