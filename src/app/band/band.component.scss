@@ -1,14 +1,17 @@
-.band {
-	background: url('/assets/img/band.jpg');
+.jumbotron.band {
+	background: url('/assets/img/band2.jpg') center no-repeat;
+	background-size: contain;
 	margin-bottom: 0px;
 	border-radius: 0px;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position-x: center;
-	background-position-y: -250px;
-	height: 30rem;
-	border-top: 2px solid grey;
-	border-bottom: 2px solid grey;
+	height: 25rem;
+	
+}
+
+@media (min-width: 1325px) {
+    .jumbotron.band {
+		background-size: cover;
+		height: -webkit-fill-available;
+	}
 }
 
 .image_container {

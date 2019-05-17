@@ -1,3 +1,7 @@
 .navbar-collapse:after{
 	background-color: black !important;
 }
+
+a:hover, a:focus {
+	color:  darken(#f5593d, 8%) !important;
+}

@@ -16,13 +16,17 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { FacebookModule, FBPostComponent } from 'ngx-facebook';
 
 import { HomeModule } from './home/home.module';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
+import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
+import { NgxPageScrollModule } from 'ngx-page-scroll';
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingComponent,
     NavbarComponent,
-    FooterComponent,    
+    FooterComponent,
+    PrivacyPolicyComponent,    
   ],
   imports: [
     BrowserModule,
@@ -32,6 +36,8 @@ import { HomeModule } from './home/home.module';
     AppRoutingModule,
     HomeModule,
     FacebookModule.forRoot(),
+    NgxPageScrollCoreModule,
+    NgxPageScrollModule,
     NgsRevealModule,
   ],
   providers: [],
