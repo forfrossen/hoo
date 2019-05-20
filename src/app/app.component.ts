@@ -40,7 +40,7 @@ export class AppComponent implements OnInit {
 		
 		this._router = this.router.events.filter( event => event instanceof NavigationEnd ).subscribe( ( event: NavigationEnd ) => {
 
-			if( event.url === "/home" ){
+			if( event.url.toLowerCase() === "/home" ){
 				this.isFixNavbarLocation = false;
 				this.moveNavbar("bottom");
 			} else {
