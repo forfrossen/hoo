@@ -1,18 +1,27 @@
-.jumbotron.band {
-	background: url('/assets/img/band2.jpg') center no-repeat;
-	background-size: contain;
-	margin-bottom: 0px;
-	border-radius: 0px;
-	height: 25rem;
-	
+.section-dark { 
+	padding: 2.5rem 0rem !important;
 }
 
-@media (min-width: 1325px) {
-    .jumbotron.band {
-		background-size: cover;
-		height: -webkit-fill-available;
+.jumbotron.band {
+	background: url('/assets/img/band2.jpg') center top no-repeat;
+	background-size: cover;
+	margin-bottom: 0px;
+	border-radius: 0px;
+	height: 25rem;	
+}
+
+@media only screen and (max-width: 800px) {
+	.jumbotron.band {
+		background-size: contain;
+		height: 40vw;	
+	}
+
+	.section-dark{
+		padding-top: 1rem !important;
+		padding-bottom: 0rem !important;
 	}
 }
+
 
 .image_container {
     position: relative;
@@ -75,6 +84,3 @@ img {
 	border: 0;
 }
 
-.section-dark { 
-	padding: 2.5rem 0rem !important;
-}

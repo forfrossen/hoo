@@ -1,7 +1,18 @@
+@import "../../assets/sass/paper-kit/variables";
+
 .page-header {
-	background				: url('/assets/img/coverart.png');
+	background				: url('/assets/img/coverart-page-header.png');
+	background-attachment	: fixed;
 	background-size			: cover;
 	background-repeat		: no-repeat;
 	background-position-x	: center;
 	background-position-y	: 0px;
+}
+
+
+@media only screen and (min-width: 800px) {
+
+	.page-header  {
+		background-size: auto;
+	}
 }
