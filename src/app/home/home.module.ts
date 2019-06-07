@@ -11,6 +11,7 @@ import { BandComponent } from 'app/band/band.component';
 import { NewsComponent } from 'app/news/news.component';
 import { MediaComponent } from 'app/media/media.component';
 import { NgsRevealModule } from 'ngx-scrollreveal';
+import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
     imports: [
@@ -19,6 +20,7 @@ import { NgsRevealModule } from 'ngx-scrollreveal';
         FormsModule,
 		RouterModule,
 		NgsRevealModule,
+		NgbCarouselModule
     ],
 	declarations: [
 		HomeComponent,

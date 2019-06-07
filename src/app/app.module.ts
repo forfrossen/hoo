@@ -13,7 +13,7 @@ import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
 
-import { FacebookModule, FBPostComponent } from 'ngx-facebook';
+//import { FacebookModule, FBPostComponent } from 'ngx-facebook';
 
 import { HomeModule } from './home/home.module';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
@@ -35,7 +35,7 @@ import { NgxPageScrollModule } from 'ngx-page-scroll';
     RouterModule,
     AppRoutingModule,
     HomeModule,
-    FacebookModule.forRoot(),
+    //FacebookModule.forRoot(),
     NgxPageScrollCoreModule,
     NgxPageScrollModule,
     NgsRevealModule,

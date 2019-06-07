@@ -84,3 +84,49 @@ img {
 	border: 0;
 }
 
+.img-thumbnail {
+	background-color: none;
+}
+
+img.img-thumbnail{
+	filter: grayscale(1);
+	-webkit-filter: grayscale(1);
+	transition: 0.5s ease-in-out;
+}
+
+img.img-thumbnail:hover{
+	filter: grayscale(0);
+	-webkit-filter: grayscale(0);
+	transition: 0.5s ease-in-out;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+	/*background-color: rgba(0, 0, 0, 0.5);*/
+	background: linear-gradient(to top, $dark-color, rgba(255,0,0,0) 100%);
+  }
+
+  
+  .img-cont:hover .overlay {
+	opacity: 1;
+  }
+  
+  .text {
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	top: 80%;
+	left: 40%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+  }

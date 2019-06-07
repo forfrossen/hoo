@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { FacebookService, InitParams, LoginResponse } from 'ngx-facebook';
-import { toBase64String } from '@angular/compiler/src/output/source_map';
-import { FBMLAttribute } from 'ngx-facebook/dist/esm/components/fbml-component';
-
+import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
+import { PageScrollService } from 'ngx-page-scroll-core';
 
 @Component({
   selector: 'app-news',
@@ -12,9 +10,14 @@ import { FBMLAttribute } from 'ngx-facebook/dist/esm/components/fbml-component';
 export class NewsComponent implements OnInit {
 
   constructor(
+	  config: NgbCarouselConfig,
+	  private pageScrollService: PageScrollService,
     //private fb: FacebookService
   ) {
-    
+	config.interval = 10000;
+    config.wrap = false;
+    config.keyboard = false;
+    config.pauseOnHover = false;
   }
   /*
   asdf(){
